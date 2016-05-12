@@ -1,0 +1,5 @@
+name: mymodule
+type: module
+description: Demonstrate a custom compound field plugin, with widget and formatter, extending the base Image module..
+core: 8.x
+package: Custom
