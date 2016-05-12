@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\image\Plugin\Field\FieldType;
+namespace Drupal\mymodule\Plugin\Field\FieldType;
 
 use Drupal\Component\Utility\Random;
 use Drupal\Core\Field\FieldDefinitionInterface;
@@ -12,15 +12,15 @@ use Drupal\file\Entity\File;
 use Drupal\file\Plugin\Field\FieldType\FileItem;
 
 /**
- * Plugin implementation of the 'image' field type.
+ * Plugin implementation of the 'enhanced_image' field type.
  *
  * @FieldType(
- *   id = "image",
- *   label = @Translation("Image"),
+ *   id = "enhanced_image",
+ *   label = @Translation("Enhanced Image"),
  *   description = @Translation("This field stores the ID of an image file as an integer value."),
  *   category = @Translation("Reference"),
- *   default_widget = "image_image",
- *   default_formatter = "image",
+ *   default_widget = "enhanced_image",
+ *   default_formatter = "enhanced_image",
  *   column_groups = {
  *     "file" = {
  *       "label" = @Translation("File"),
@@ -42,7 +42,7 @@ use Drupal\file\Plugin\Field\FieldType\FileItem;
  *   constraints = {"ReferenceAccess" = {}, "FileValidation" = {}}
  * )
  */
-class ImageItem extends FileItem {
+class EnhancedImageItem extends FileItem {
 
   /**
    * The entity manager.

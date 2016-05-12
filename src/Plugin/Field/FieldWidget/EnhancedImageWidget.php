@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\image\Plugin\Field\FieldWidget;
+namespace Drupal\mymodule\Plugin\Field\FieldWidget;
 
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Component\Utility\NestedArray;
@@ -10,17 +10,17 @@ use Drupal\file\Plugin\Field\FieldWidget\FileWidget;
 use Drupal\image\Entity\ImageStyle;
 
 /**
- * Plugin implementation of the 'image_image' widget.
+ * Plugin implementation of the 'enhanced_image' widget.
  *
  * @FieldWidget(
- *   id = "image_image",
- *   label = @Translation("Image"),
+ *   id = "enhanced_image",
+ *   label = @Translation("Enhanced Image"),
  *   field_types = {
- *     "image"
+ *     "enhanced_image"
  *   }
  * )
  */
-class ImageWidget extends FileWidget {
+class EnhancedImageWidget extends FileWidget {
 
   /**
    * {@inheritdoc}

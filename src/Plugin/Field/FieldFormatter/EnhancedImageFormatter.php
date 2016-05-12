@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\image\Plugin\Field\FieldFormatter;
+namespace Drupal\mymodule\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\FieldItemListInterface;
@@ -14,18 +14,20 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Cache\Cache;
 
+use Drupal\image\Plugin\Field\FieldFormatter\ImageFormatterBase;
+
 /**
- * Plugin implementation of the 'image' formatter.
+ * Plugin implementation of the 'enhanced_image' formatter.
  *
  * @FieldFormatter(
- *   id = "image",
+ *   id = "enhanced_image",
  *   label = @Translation("Image"),
  *   field_types = {
  *     "image"
  *   }
  * )
  */
-class ImageFormatter extends ImageFormatterBase implements ContainerFactoryPluginInterface {
+class EnhancedImageFormatter extends ImageFormatterBase implements ContainerFactoryPluginInterface {
 
   /**
    * The current user.
